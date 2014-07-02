@@ -1,0 +1,66 @@
+/* ==========================================================================
+  Typography
+========================================================================== */
+
+html, body, button {
+  font-smoothing: antialiased;
+}
+
+body {
+  @include fontDefault();
+  font-size: $fontBase;
+  line-height: $lineHeight;
+  color: $colorText;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+p, ul, ol {
+  padding: 0 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  @include fontHighlight();
+  line-height: $lineHeightHeader;
+  text-rendering: optimizeLegibility;
+  color: $colorGray;
+}
+
+.h1, h1 {
+  font-size: $fontH1;
+}
+
+.h2, h2 {
+  font-size: $fontH2;
+  margin: 0 0 30px;
+}
+
+.h3, h3 {
+  font-size: $fontH3;
+  margin: 0 0 20px;
+}
+
+.h4, h4 {
+  font-size: $fontH4;
+}
+
+h5, .h5 {
+  font-size: $fontH5;
+}
+
+h6, .h6 {
+  font-size: $fontH6;
+}
+
+.small,
+small {
+  font-size: $fontSmall;
+}
+
+.strong,
+strong {
+  font-weight: bold;
+}

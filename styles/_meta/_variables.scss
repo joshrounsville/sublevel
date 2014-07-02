@@ -1,0 +1,53 @@
+/* ==========================================================================
+  Variables
+========================================================================== */
+
+
+/*==========  DEFINE BREAKPOINTS  ==========*/
+$xSmall: 555px !default;
+$small: 767px !default;
+$medium: 979px !default;
+$large: 1180px !default;
+
+
+/*==========  SPACING  ==========*/
+
+$padding: 20px;
+$margin: 50px;
+
+
+/*==========  COLORS  ==========*/
+
+$colorGray: #4D525B !default;
+$colorGrayLight: #F4F5F7 !default;
+$colorGrayDark: #4A4A4A !default;
+
+$colorText: $colorGrayDark !default;
+$colorHighlight: #DA7349 !default;
+$colorBtn: $colorHighlight !default;
+
+$colorLink: #333 !default;
+
+
+/*==========  FONTS  ==========*/
+
+$fontSmall: 13px !default;
+$fontBase: 18px  !default;
+$fontLarge: 20px !default;
+
+$fontH1: 32px !default;
+$fontH2: 26px !default;
+$fontH3: 20px !default;
+$fontH4: 18px !default;
+$fontH5: 16px !default;
+$fontH6: 14px !default;
+
+$lineHeight: 1.5 !default;
+$lineHeightHeader: 1.2 !default;
+
+
+$fontDefault: "source-sans-light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$fontHighlight: "Glegoo", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+
+$animationEasing: cubic-bezier(0.455, 0.030, 0.515, 0.955) !default;
