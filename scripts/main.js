@@ -44,12 +44,14 @@ $(function() {
 
   // show scroll nav
   var showNav = function() {
-    var header = $('header');
-    var height = $(header).height();
+    var mainNav = $('nav.nav-main');
+    var height = $(mainNav).height();
+    var padding = $(mainNav).css('padding-top');
+    var position = parseInt(height) + parseInt(padding);
     var nav = $('nav.nav-scroll');
     var scrollPosition = $(window).scrollTop();
 
-    if ( scrollPosition > height ) {
+    if ( scrollPosition > position ) {
       if ( !nav.hasClass('show') ) {
         nav.addClass('show');
       }
