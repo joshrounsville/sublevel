@@ -73,7 +73,7 @@ $(function() {
   // grab instagram photos (for homepage)
   var getInstagram = function() {
 
-    $.getJSON('https://api.instagram.com/v1/users/1363303353/media/recent?access_token=11843940.22ce416.2a318dfd6d324973bcc432be194f6148&count=4&callback=?', function(data) {
+    $.getJSON('https://api.instagram.com/v1/users/1364227902/media/recent?access_token=11843940.22ce416.2a318dfd6d324973bcc432be194f6148&count=4&callback=?', function(data) {
 
       $.each(data.data, function(i, image) {
         var target = '#instagram';
