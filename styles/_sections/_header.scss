@@ -5,8 +5,12 @@
 
 header {
   background: url(/img/structure/header-bg.png) no-repeat center center, linear-gradient( to right, #b26140 50%, #d6744c 50%);
+  background-size: cover;
   height: 440px;
   color: #fff;
+  .subpage & {
+    height: 210px;
+  }
   h1 {
     margin: 80px 0 0 0;
     color: #fff;

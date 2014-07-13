@@ -32,3 +32,18 @@
     opacity: 0;
   }
 }
+
+
+
+/*==========  GROW HEIGHT  ==========*/
+
+@keyframes growHeight {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+  100% {
+    opacity: 1;
+    max-height: 30px;
+  }
+}

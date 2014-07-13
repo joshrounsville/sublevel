@@ -15,6 +15,12 @@
   font-weight: 400;
 }
 
+@mixin fontBold() {
+  font-family: $fontBold;
+  font-style: normal;
+  font-weight: normal;
+}
+
 @mixin breakpoint($point) {
   @if $point == xSmall {
     @media (max-width: $xSmall)  { @content; }

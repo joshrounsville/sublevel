@@ -100,4 +100,49 @@ $(function() {
     getInstagram();
   }
 
+
+  var formValidate = function() {
+    var form = $('form.validate');
+    var input = $('form .validate-field');
+
+    $(form).validate({
+      rules: {
+        phone: {
+          required: true,
+          phoneUS: true
+        }
+      }
+    });
+
+
+    $(input).on('keyup', function() {
+
+      var empty = $(input).filter(function() {
+        return this.value === '';
+      });
+
+      if ( !empty.length ) {
+        if ( !form.hasClass('valid') ) {
+          form.addClass('valid');
+        }
+      } else {
+        form.removeClass('valid');
+      }
+
+    });
+
+  }();
+
+  var formLabel = function() {
+    var input = $('form input, form textarea');
+
+    input.on('focus', function() {
+      $(this).parent().addClass('focus');
+    });
+
+    input.on('blur', function() {
+      $(this).parent().removeClass('focus');
+    });
+  }();
+
 });

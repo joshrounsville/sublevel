@@ -31,3 +31,42 @@ ol {
     display: inline-block;
   }
 }
+
+.list-spacer-horz {
+  li {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+.list-order-steps {
+  text-align: left;
+  margin: 0 -15px;
+  > li {
+    display: block;
+    width: 25%;
+    float: left;
+    position: relative;
+    padding: 0 15px;
+    &:after {
+      content: " ";
+      display: block;
+      background: url(/img/icons/arrow-right.svg) center center;
+      width: 26px;
+      height: 20px;
+      position: absolute;
+      top: 27px;
+      right: 7px;
+    }
+    .no-svg & {
+      &:after {
+        background: url(/img/icons/arrow-right.png) center center;
+      }
+    }
+    &:last-of-type {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

@@ -49,7 +49,8 @@
   a {
     color: #999;
     &:hover,
-    &:focus {
+    &:focus,
+    &.active {
       color: $colorHighlight;
     }
   }
@@ -71,7 +72,8 @@
   a {
     color: #fff;
     &:hover,
-    &:focus {
+    &:focus,
+    &.active {
       color: $colorGrayDark;
     }
   }
