@@ -62,6 +62,7 @@
   font-size: 20px;
   padding: 40px 0 0;
   @include fontHighlight();
+  animation: fadeIn .3s .7s both;
   li {
     display: inline-block;
     margin: 0 30px;
@@ -70,12 +71,15 @@
     }
   }
   a {
-    color: #fff;
+    color: darken(#fff, 20%);
     &:hover,
     &:focus,
     &.active {
-      color: $colorGrayDark;
+      color: #fff;
     }
+  }
+  img {
+    animation: fadeIn .3s .9s both;
   }
 }
 

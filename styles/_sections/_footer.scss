@@ -5,4 +5,7 @@
 
 footer {
   padding: 15px 0 80px;
+  .container {
+    animation: fadeIn .3s .5s both;
+  }
 }
