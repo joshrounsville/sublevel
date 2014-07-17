@@ -71,11 +71,13 @@
     }
   }
   a {
-    color: darken(#fff, 20%);
+    color: #fff;
+    opacity: 0.5;
     &:hover,
     &:focus,
-    &.active {
-      color: #fff;
+    &.active,
+    &.logo {
+      opacity: 1;
     }
   }
   img {
