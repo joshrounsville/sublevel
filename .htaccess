@@ -580,7 +580,7 @@ AddDefaultCharset utf-8
     # `mod_filter` and can remove the `<IfModule mod_filter.c>` & `</IfModule>`
     # lines as `AddOutputFilterByType` is still in the core directives.
 
-    <IfModule mod_filter.c>
+
         AddOutputFilterByType DEFLATE application/atom+xml \
                                       application/javascript \
                                       application/json \
@@ -602,7 +602,7 @@ AddDefaultCharset utf-8
                                       text/vtt \
                                       text/x-component \
                                       text/xml
-    </IfModule>
+
 
 </IfModule>
 
@@ -740,3 +740,14 @@ FileETag None
 #     </FilesMatch>
 #
 # </IfModule>
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

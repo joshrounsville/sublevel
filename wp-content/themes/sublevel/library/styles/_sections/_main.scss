@@ -1,0 +1,40 @@
+/* ==========================================================================
+  Main
+========================================================================== */
+
+
+section {
+  background: #fff;
+  padding: 55px 0;
+  .container {
+    animation: fadeIn .3s .3s both;
+  }
+
+  @include breakpoint(medium) {
+    .container {
+      animation: none;
+    }
+  }
+  @include breakpoint(small) {
+    padding: 20px 0;
+    .container {
+      animation: none;
+    }
+  }
+}
+
+.instagram {
+  a {
+    display: block;
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+  @include breakpoint(small) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+/* ==========================================================================
+  Header
+========================================================================== */
+
+
+header {
+  background: #000;
+  position: relative;
+  .home & {
+    height: 600px;
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  .full-width {
+    background: #000 url(../img/structure/header-bg-black.jpg) no-repeat center center;
+    background-size: cover;
+    height: 210px;
+    color: #fff;
+    animation: fadeIn .3s .1s both;
+  }
+  h1 {
+    margin: 120px 0 0 0;
+    color: #fff;
+    animation: fadeIn .3s .7s both;
+  }
+  .btn {
+    animation: fadeIn .3s .9s both;
+  }
+
+  @include breakpoint(large) {
+    .home & {
+      height: 480px;
+    }
+    h1 {
+      margin: 80px 0 0 0;
+    }
+  }
+  @include breakpoint(medium) {
+    .home & {
+      height: auto;
+      padding-bottom: 40px;
+    }
+    .full-width {
+      animation: none;
+      height: auto;
+      padding: 0 0 40px;
+    }
+    h1 {
+      animation: none;
+      margin: 50px 0 0 0;
+    }
+    .btn {
+      animation: none;
+    }
+  }
+  @include breakpoint(small) {
+    position: relative;
+    .home & {
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .full-width {
+      height: auto;
+      padding: 20px 0;
+      animation: none;
+    }
+    .subpage & {
+      .full-width {
+        height: auto;
+        padding-bottom: 0;
+      }
+    }
+    h1 {
+      margin: 30px 0 0 0;
+      animation: none;
+    }
+    .btn {
+      animation: none;
+    }
+  }
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  animation: fadeIn 1s .8s both;
+  overflow: hidden;
+  video {
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0.3;
+  }
+
+  @include breakpoint(medium) {
+    background: #000 url(../img/structure/header-bg-black.jpg) no-repeat center center;
+    background-size: cover;
+    animation: fadeIn .3s .1s both;
+    video {
+      display: none;
+    }
+  }
+  @include breakpoint(small) {
+    background: #000 url(../img/structure/header-bg-black.jpg) no-repeat center center;
+    background-size: cover;
+    animation: none;
+    video {
+      display: none;
+    }
+  }
+}

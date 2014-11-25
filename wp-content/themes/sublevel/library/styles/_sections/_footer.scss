@@ -1,0 +1,26 @@
+/* ==========================================================================
+  Footer
+========================================================================== */
+
+
+footer {
+  padding: 30px 0 80px;
+  color: #fff;
+  font-size: $fontSmall;
+  .container {
+    animation: fadeIn .3s .5s both;
+  }
+  .list-inline {
+    li {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  @include breakpoint(small) {
+    .list-inline {
+      li {
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+}

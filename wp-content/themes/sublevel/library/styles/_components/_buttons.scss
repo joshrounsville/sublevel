@@ -1,0 +1,69 @@
+/* ==========================================================================
+  Button
+========================================================================== */
+
+
+.btn {
+  display: inline-block;
+  padding: 11px 24px 10px;
+  min-width: 200px;
+  text-align: center;
+  font-family: $fontHighlight;
+  font-weight: 600;
+  text-decoration: none;
+  outline: 0;
+  background: none;
+  color: $colorGray;
+  text-transform: lowercase;
+  border: 2px solid $colorBtn;
+  border-radius: 30px;
+  @include fontBold();
+  position: relative;
+  &:hover,
+  &:focus {
+    border-color: darken($colorBtn, 15%);
+    text-decoration: none;
+    &:after {
+      opacity: 1;
+      top: -3px;
+      right: -3px;
+      bottom: -3px;
+      left: -3px;
+    }
+  }
+  &:after {
+    content: " ";
+    border: 2px solid darken($colorBtn, 15%);
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border-radius: 30px;
+    opacity: 0;
+    transition: all 0.15s ease-in-out;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+
+  &.btn--primary {
+    font-size: 16px;
+    padding: (($lineHeight / 2) - 1) 32px;
+  }
+  &.btn--secondary {
+    font-size: 14px;
+    padding: (($lineHeight / 2) - 1) 32px;
+  }
+}
+
+header {
+  .btn {
+    color: #fff;
+    border-color: #fff;
+    &:hover,
+    &:focus {
+      color: #fff;
+      border-color: darken($colorBtn, 15%);
+    }
+  }
+}
