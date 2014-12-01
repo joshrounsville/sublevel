@@ -17,6 +17,9 @@
                 <li><a href="<?php echo get_page_link(9); ?>">Order</a></li>
                 <li><a href="<?php echo get_page_link(11); ?>">Contact</a></li>
                 <li class="social">
+                  <a href="https://twitter.com/subleveldrumco" class="twitter" target="blank"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="social">
                   <a href="http://instagram.com/subleveldrumcompany" class="instagram" target="blank"><i class="fa fa-instagram"></i></a>
                 </li>
                 <li class="social">

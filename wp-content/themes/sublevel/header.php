@@ -9,6 +9,7 @@
 
     <title><?php wp_title(' | ', true, 'right'); ?></title>
 
+    <meta name="description" content="Quality, hand crafted drum kits made with purpose in the USA.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/library/img/structure/favicon.png">
